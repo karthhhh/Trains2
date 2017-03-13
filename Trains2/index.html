@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Train Scheduler</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="tsrd.css">
+	<script src="https://www.gstatic.com/firebasejs/3.7.0/firebase.js"></script>
+	
+</head>
+<body>
+	<header>
+		<h1>Any Time is Train Time</h1>
+
+		<h3>Cash me on a train how bouh dah</h3>
+	</header>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-12 col-centered brand-top">
+				<table class="table table-striped">
+				<div class="full-width blue">
+				<h3>Current Train Schedule</h3>
+				</div>
+				    <thead>
+				      <tr>
+				        <th>Train Name</th>
+				        <th>Destination</th>
+				        <th>Frequency</th>
+				        <th>Next Arrival</th>
+				        <th>Minutes Away</th>
+				      </tr>
+				    </thead>
+				    <tbody id="trainRows">
+				    </tbody>
+				  </table>
+				</div>
+
+		</div>
+	</div>
+</div>
+	</div>
+	
+</div>
+
+
+<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-centered main-block">
+				<div class="full-width blue">
+					<h3 style="margin-left: 10px;">Add a Train</h3>
+				</div>
+			<div style="padding: 8px" class="full-width">
+
+				<h3>Train Name</h3>
+
+					<input type="text" name="trainName" id="trainName">
+					<br>
+					<h3>Destination</h3>
+					<input type="text" name="trainDestination" id="trainDestination">
+					<br>
+					<h3>Start Time (HHmm - millitary time)</h3>
+					<input type="number" name="trainStartTime" id="trainStartTime">
+					<br>
+					<h3>Frequency(minutes) </h3>
+					<input type="number" name="trainFrequency" id="trainFrequency">
+					<br>
+					<button class="btn btn-primary" id="addTrain">Add Train</button>
+
+			</div>
+		</div>
+	</div>
+	<br>
+
+
+<script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+<script type="text/javascript" src= "train.js"></script>
+</body>
+</html>

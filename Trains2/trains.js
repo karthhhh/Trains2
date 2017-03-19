@@ -106,10 +106,14 @@ $("#addTrain").click(function(event){
 function nextArrivalTime(startTime, frequency)
 {
 	// First identify the epoch time of the startTime
-	console.log(startTime);
+	//console.log(startTime);
 	// use moment to get the epoch time of the startTime
 
 	// Then get current epoch time
+
+	var nextArrivalTime= ((moment)(moment(nextArrivalTime, "hh:mm")/1000))/60;
+	console.log("CONVERTED TRAIN TIME:" + nextArrivalTime + "minutes");
+
 
 	
 
